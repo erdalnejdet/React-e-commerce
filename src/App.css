@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+p{
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding : 20px 0;
+flex-direction: row;
+}
+
+.logo{
+font-size: 25px;
+}
+.flex input{
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+
+    padding: 10px 20px;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    border-left: 0;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+.form{
+    display: flex;
+    align-items: center;
+}
+.icon-size{
+    font-size: 25px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+.urun-img{
+    height: 150px;
+}
+.urun-flex{
+    display: flex; align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.urun-listesi{
+    max-width: 25.33%;
+    flex: 0 0 25%;
+    position: relative;
+    height: 350px;
+    
+}
+
+.urun-listesi{
+  
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 4px 36px rgba(0,0,0,.3);
+    box-shadow: 0 4px 36px rgba(0,0,0,.3)
+}
+
+.h3-title{
+    font-size: 15px;
+}
+
+.price{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.button{
+    display: inline-block;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.price-basket{
+    font-size: 15px!important;
+}
+
+
+.d-basket{
+    padding: 25px;
+}
+
+
+.right-basket{
+    margin-top: 15px;
+}
+
+.d-block{
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 15px 0;
+}
+.d-basket-flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
