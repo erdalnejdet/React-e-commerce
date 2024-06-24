@@ -139,3 +139,22 @@ img{
     justify-content: start;
     gap: 15px;
 }
+@media screen and (max-width: 992px) {
+    .urun-flex {
+        flex-direction: column;
+    }
+    .urun-listesi{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .button{
+        margin-top: 25px;
+        display: block;
+        position: initial;
+        transform:inherit;
+    }
+    .card-flex{
+        flex-wrap: wrap;
+    }
+  }

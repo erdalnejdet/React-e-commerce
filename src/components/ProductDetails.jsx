@@ -6,6 +6,8 @@ import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
 import Button from '@mui/material/Button';
 import { addToBasket, calculateBasket } from '../redux/slices/basketSlice';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ProductDetails() {
 
@@ -48,6 +50,11 @@ const GetProductById = () =>{
 }
 
 const addBasket = ()=> {
+if(count== 0){
+  toast.error('Lütfen Ürün Adeti Seçiniz');
+  return;
+}
+else{
   const payload = {
     id,
     price,
@@ -60,6 +67,9 @@ const addBasket = ()=> {
   }
 dispatch(addToBasket(payload))
 dispatch(calculateBasket())
+toast.success('Sepete Eklendi');
+return;
+}
 }
 
   return (

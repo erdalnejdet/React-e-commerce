@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './components/Header'
 import PageContainer from './container/PageContainer'
-import RouterConfing from './confing/RouterConfing'
+import RouterConfig from './config/RouterConfig'
 import Loading from './components/Loading'
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useSelector,useDispatch } from 'react-redux'
 import { calculateBasket, setDrawer,RemoveProduct } from './redux/slices/basketSlice'
 
@@ -35,7 +37,7 @@ const Remove = ()=>{
     <PageContainer>
     <Loading/>
     <Header/>
-    <RouterConfing/>
+    <RouterConfig/>
     <Drawer onClick={close} anchor='right' open={drawer}>
       {
         products && products.map((product)=>{
@@ -69,6 +71,7 @@ const Remove = ()=>{
       </h2>
     </Drawer>
     <Loading/>
+    <ToastContainer />
     </PageContainer>
     </>
   )
